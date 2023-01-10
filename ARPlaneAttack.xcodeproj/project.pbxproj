@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		945AB7FD296CA3360019AFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945AB7FC296CA3360019AFD6 /* AppDelegate.swift */; };
+		945AB7FF296CA3360019AFD6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 945AB7FE296CA3360019AFD6 /* art.scnassets */; };
+		945AB804296CA3360019AFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945AB802296CA3360019AFD6 /* Main.storyboard */; };
+		945AB806296CA3370019AFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945AB805296CA3370019AFD6 /* Assets.xcassets */; };
+		945AB809296CA3370019AFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945AB807296CA3370019AFD6 /* LaunchScreen.storyboard */; };
+		949B2F60296CFF22000C4BF9 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F5F296CFF21000C4BF9 /* DeviceOrientation.swift */; };
+		949B2F62296CFF43000C4BF9 /* SCNQuaternion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F61296CFF43000C4BF9 /* SCNQuaternion+Extension.swift */; };
+		949B2F64296CFF68000C4BF9 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F63296CFF68000C4BF9 /* Plane.swift */; };
+		949B2F66296CFF80000C4BF9 /* ARSCNView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F65296CFF80000C4BF9 /* ARSCNView+Extension.swift */; };
+		949B2F68296CFFC9000C4BF9 /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F67296CFFC9000C4BF9 /* SCNNode+Extension.swift */; };
+		949B2F6A296CFFED000C4BF9 /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B2F69296CFFED000C4BF9 /* SCNVector3+Extension.swift */; };
+		949E455C296CB00A001BF868 /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E455B296CB00A001BF868 /* MatrixHelper.swift */; };
+		949E455F296CB03B001BF868 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E455D296CB03B001BF868 /* Joystick.swift */; };
+		949E4560296CB03B001BF868 /* JoystickScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E455E296CB03B001BF868 /* JoystickScene.swift */; };
+		949E4562296CB044001BF868 /* JoystickSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E4561296CB044001BF868 /* JoystickSceneDelegate.swift */; };
+		949E4564296CB055001BF868 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E4563296CB055001BF868 /* GameViewController.swift */; };
+		949E4566296CB078001BF868 /* PlaneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E4565296CB078001BF868 /* PlaneSceneView.swift */; };
+		94D10844296CD52E009812A8 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D10842296CD52E009812A8 /* FocusSquareSegment.swift */; };
+		94D10845296CD52E009812A8 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D10843296CD52E009812A8 /* FocusSquare.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		945AB7F9296CA3360019AFD6 /* ARPlaneAttack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPlaneAttack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		945AB7FC296CA3360019AFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		945AB7FE296CA3360019AFD6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		945AB803296CA3360019AFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		945AB805296CA3370019AFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		945AB808296CA3370019AFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		949B2F5F296CFF21000C4BF9 /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		949B2F61296CFF43000C4BF9 /* SCNQuaternion+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNQuaternion+Extension.swift"; sourceTree = "<group>"; };
+		949B2F63296CFF68000C4BF9 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		949B2F65296CFF80000C4BF9 /* ARSCNView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSCNView+Extension.swift"; sourceTree = "<group>"; };
+		949B2F67296CFFC9000C4BF9 /* SCNNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extension.swift"; sourceTree = "<group>"; };
+		949B2F69296CFFED000C4BF9 /* SCNVector3+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extension.swift"; sourceTree = "<group>"; };
+		949E455B296CB00A001BF868 /* MatrixHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		949E455D296CB03B001BF868 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
+		949E455E296CB03B001BF868 /* JoystickScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickScene.swift; sourceTree = "<group>"; };
+		949E4561296CB044001BF868 /* JoystickSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickSceneDelegate.swift; sourceTree = "<group>"; };
+		949E4563296CB055001BF868 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		949E4565296CB078001BF868 /* PlaneSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneSceneView.swift; sourceTree = "<group>"; };
+		94D10842296CD52E009812A8 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		94D10843296CD52E009812A8 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		945AB7F6296CA3360019AFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		945AB7F0296CA3360019AFD6 = {
+			isa = PBXGroup;
+			children = (
+				945AB7FB296CA3360019AFD6 /* ARPlaneAttack */,
+				945AB7FA296CA3360019AFD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		945AB7FA296CA3360019AFD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				945AB7F9296CA3360019AFD6 /* ARPlaneAttack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		945AB7FB296CA3360019AFD6 /* ARPlaneAttack */ = {
+			isa = PBXGroup;
+			children = (
+				945AB7FC296CA3360019AFD6 /* AppDelegate.swift */,
+				949E455B296CB00A001BF868 /* MatrixHelper.swift */,
+				949B2F69296CFFED000C4BF9 /* SCNVector3+Extension.swift */,
+				949B2F67296CFFC9000C4BF9 /* SCNNode+Extension.swift */,
+				949B2F65296CFF80000C4BF9 /* ARSCNView+Extension.swift */,
+				949B2F63296CFF68000C4BF9 /* Plane.swift */,
+				949B2F61296CFF43000C4BF9 /* SCNQuaternion+Extension.swift */,
+				949B2F5F296CFF21000C4BF9 /* DeviceOrientation.swift */,
+				949E455D296CB03B001BF868 /* Joystick.swift */,
+				949E4563296CB055001BF868 /* GameViewController.swift */,
+				94D10846296CD534009812A8 /* FocusSquare */,
+				949E4565296CB078001BF868 /* PlaneSceneView.swift */,
+				949E455E296CB03B001BF868 /* JoystickScene.swift */,
+				949E4561296CB044001BF868 /* JoystickSceneDelegate.swift */,
+				945AB7FE296CA3360019AFD6 /* art.scnassets */,
+				945AB802296CA3360019AFD6 /* Main.storyboard */,
+				945AB805296CA3370019AFD6 /* Assets.xcassets */,
+				945AB807296CA3370019AFD6 /* LaunchScreen.storyboard */,
+			);
+			path = ARPlaneAttack;
+			sourceTree = "<group>";
+		};
+		94D10846296CD534009812A8 /* FocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				94D10843296CD52E009812A8 /* FocusSquare.swift */,
+				94D10842296CD52E009812A8 /* FocusSquareSegment.swift */,
+			);
+			path = FocusSquare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		945AB7F8296CA3360019AFD6 /* ARPlaneAttack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 945AB80C296CA3370019AFD6 /* Build configuration list for PBXNativeTarget "ARPlaneAttack" */;
+			buildPhases = (
+				945AB7F5296CA3360019AFD6 /* Sources */,
+				945AB7F6296CA3360019AFD6 /* Frameworks */,
+				945AB7F7296CA3360019AFD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARPlaneAttack;
+			productName = ARPlaneAttack;
+			productReference = 945AB7F9296CA3360019AFD6 /* ARPlaneAttack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		945AB7F1296CA3360019AFD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					945AB7F8296CA3360019AFD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 945AB7F4296CA3360019AFD6 /* Build configuration list for PBXProject "ARPlaneAttack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 945AB7F0296CA3360019AFD6;
+			productRefGroup = 945AB7FA296CA3360019AFD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				945AB7F8296CA3360019AFD6 /* ARPlaneAttack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		945AB7F7296CA3360019AFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945AB7FF296CA3360019AFD6 /* art.scnassets in Resources */,
+				945AB809296CA3370019AFD6 /* LaunchScreen.storyboard in Resources */,
+				945AB806296CA3370019AFD6 /* Assets.xcassets in Resources */,
+				945AB804296CA3360019AFD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		945AB7F5296CA3360019AFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949B2F60296CFF22000C4BF9 /* DeviceOrientation.swift in Sources */,
+				949E4564296CB055001BF868 /* GameViewController.swift in Sources */,
+				949B2F62296CFF43000C4BF9 /* SCNQuaternion+Extension.swift in Sources */,
+				949B2F6A296CFFED000C4BF9 /* SCNVector3+Extension.swift in Sources */,
+				949E455C296CB00A001BF868 /* MatrixHelper.swift in Sources */,
+				949E455F296CB03B001BF868 /* Joystick.swift in Sources */,
+				949E4560296CB03B001BF868 /* JoystickScene.swift in Sources */,
+				94D10844296CD52E009812A8 /* FocusSquareSegment.swift in Sources */,
+				949B2F66296CFF80000C4BF9 /* ARSCNView+Extension.swift in Sources */,
+				949B2F68296CFFC9000C4BF9 /* SCNNode+Extension.swift in Sources */,
+				949E4562296CB044001BF868 /* JoystickSceneDelegate.swift in Sources */,
+				949E4566296CB078001BF868 /* PlaneSceneView.swift in Sources */,
+				945AB7FD296CA3360019AFD6 /* AppDelegate.swift in Sources */,
+				949B2F64296CFF68000C4BF9 /* Plane.swift in Sources */,
+				94D10845296CD52E009812A8 /* FocusSquare.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		945AB802296CA3360019AFD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				945AB803296CA3360019AFD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		945AB807296CA3370019AFD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				945AB808296CA3370019AFD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		945AB80A296CA3370019AFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		945AB80B296CA3370019AFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		945AB80D296CA3370019AFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SZP4Q326F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.froleeyo.ARPlaneAttack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		945AB80E296CA3370019AFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SZP4Q326F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.froleeyo.ARPlaneAttack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		945AB7F4296CA3360019AFD6 /* Build configuration list for PBXProject "ARPlaneAttack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945AB80A296CA3370019AFD6 /* Debug */,
+				945AB80B296CA3370019AFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		945AB80C296CA3370019AFD6 /* Build configuration list for PBXNativeTarget "ARPlaneAttack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945AB80D296CA3370019AFD6 /* Debug */,
+				945AB80E296CA3370019AFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 945AB7F1296CA3360019AFD6 /* Project object */;
+}
